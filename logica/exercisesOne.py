@@ -1,15 +1,24 @@
 import json 
 def leer_archivo(path):
-    with open(f"databases/{path}", "r",encoding="utf-8") as file:
-        datos=file.read()
-        convertirList = json.loads(datos)
-        return convertirList
+    try:
+        with open(f"databases/{path}", "r",encoding="utf-8") as file:
+            datos=file.read()
+            convertirList = json.loads(datos)
+            return convertirList
+    except FileNotFoundError:
+        print(f"El archivo {path} no se encontró.")
+        return []
+    except json.JSONDecodeError:
+        print(f"El archivo {path} no contiene un formato JSON válido.")
+        return []
 
 def escribir_archivo(datos,path ):
-    with open(f"databases/{path}", "wb+") as file:
-        convertirJson = json.dumps(datos, indent=4).encode("utf-8")
-        file.write(convertirJson)
-        file.close()
+    try:
+        with open(f"databases/{path}", "w+") as file:
+            convertirJson = json.dumps(datos, indent=4).encode("utf-8")
+            file.write(convertirJson)
+    except IOError:
+        print(f"Hubo un error al escribir el archivo {path}")
 
 #Escribir un programa que almacene las asignaturas de un curso 
 #(por ejemplo Matemáticas, Física, Química, Historia y Lengua)
