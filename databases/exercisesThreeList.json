@@ -1,0 +1,32 @@
+{
+    "asignaturas": [
+        {
+            "Matematicas": 5,
+            "Fisica": 4,
+            "Quimica": 3,
+            "Historia": 5,
+            "Lengua": 3
+        },
+        {
+            "Matematicas": 10,
+            "Fisica": 10,
+            "Quimica": 10,
+            "Historia": 10,
+            "Lengua": 10
+        },
+        {
+            "Matematicas": 10,
+            "Fisica": 12,
+            "Quimica": 12,
+            "Historia": 12,
+            "Lengua": 12
+        },
+        {
+            "Matematicas": 12,
+            "Fisica": 12,
+            "Quimica": 12,
+            "Historia": 12,
+            "Lengua": 12
+        }
+    ]
+}

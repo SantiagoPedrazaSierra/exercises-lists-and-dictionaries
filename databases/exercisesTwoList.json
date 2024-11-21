@@ -1,1 +1,8 @@
-[]
+{
+    "asignaturas": [
+        "Matematicas",
+        "Sociales",
+        "Ingles",
+        "Biologia"
+    ]
+}
