@@ -1,6 +1,6 @@
 from menu.exercisesOne import designOneList,designOneDict
 from menu.exercisesTwo import designTwoList,designTwoDict
-from menu.exercisesThree import designThreeList
+from menu.exercisesThree import designThreeList,designThreeDict
 import os
 #Menu Principal
 def Main_menu():
@@ -17,10 +17,10 @@ def Main_menu():
     -ingrese un numero del (1-3):"""))
             match opcion :
                 case 1:
-                    os.system('cls')
+                    os.system('clear')
                     MenuListExercises()
                 case 2:
-                    os.system('cls')
+                    os.system('clear')
                     MenuDictExercises()
                 case 3:
                     print("\n-Saliendo del programa...")
@@ -48,16 +48,16 @@ def MenuListExercises():
         
             match opcion :
                 case 1:
-                    os.system('cls')
+                    os.system('clear')
                     designOneList()
                 case 2:
                     os.system('cls')
                     designTwoList()
                 case 3: 
-                    os.system('cls')
+                    os.system('clear')
                     designThreeList()
                 case 4:
-                    os.system('cls')
+                    os.system('clear')
                     return #Volver al menu principal
                 case _: print ("Opcion no valida.")
         except ValueError:
@@ -81,16 +81,16 @@ def MenuDictExercises():
         
             match opcion :
                 case 1:
-                    os.system('cls')
+                    os.system('clear')
                     designOneDict()
                 case 2:
-                    os.system('cls')
+                    os.system('clear')
                     designTwoDict()
                 case 3:
-                    os.system('cls')
-                    print("Aun no esta disponible el ejercicio 3 de Diccionarios")
+                    os.system('clear')
+                    designThreeDict()
                 case 4: 
-                    os.system('cls')
+                    os.system('clear')
                     return #Volver al menu principal
                 case _: print ("Opcion no valida.")
         except ValueError:
