@@ -1,15 +1,10 @@
-from logica.exercisesFour import guardar_mostrar_numGanadores
+from logica.exercisesFour import loteria,formato_fecha
 
-def designFourList():
-    #Preguntar a usuario los numeros ganadores de la loteria
-    num_ganadores=input("Cuales son los numeros ganadores de la loteria?: ")
+def desingFourList():
+    numero = int (input("Cual es el numero ganador de la loteria?:' "))
+    print(loteria(numero))
 
-    #Ordenar numeros de lista de menor a ma
-
-    #Llamar a la funcion para guardar y mostrar los numeros ganadores de menor a mayor 
-    resultado=guardar_mostrar_numGanadores(num_ganadores)
-
-    lista_ordenada=sorted(num_ganadores)
-
-    #Mostrar los numeros ganadores de menor a mayor 
-    print(num_ganadores)
+def desingFourDict():
+    fecha = input("Cual es la fecha? ejemplo: 'dd/mm/aa, day/month/year, 01/01/2024' ")
+    print(formato_fecha(fecha))
+    return 0
