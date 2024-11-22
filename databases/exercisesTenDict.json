@@ -1,0 +1,9 @@
+{
+    "12345678A": {
+        "nombre": "Juan P\u00e9rez",
+        "direccion": "Calle Falsa 123",
+        "telefono": "912345678",
+        "correo": "juanperez@email.com",
+        "preferente": true
+    }
+}

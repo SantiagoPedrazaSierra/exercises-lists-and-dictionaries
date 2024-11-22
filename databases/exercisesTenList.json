@@ -1,0 +1,13 @@
+{
+    "precios": [
+        50,
+        75,
+        46,
+        22,
+        80,
+        65,
+        8
+    ],
+    "menor_precio": 8,
+    "mayor_precio": 80
+}

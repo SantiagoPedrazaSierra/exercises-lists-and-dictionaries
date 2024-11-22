@@ -5,6 +5,9 @@ from menu.exercisesFour import desingFourList,desingFourDict
 from menu.exercisesFive import desingFiveList,desingFiveDict
 from menu.exercisesSix import desingSixList,desingSixDict
 from menu.exercisesSeven import designSevenList, designSevenDict
+from menu.exercisesEigth import designEigthList,designEigthDict
+from menu.exercisesNine import designNineList,designNineDict
+from menu.exercisesTen import designTenList,designTenDict
 import os
 
 #Menu Principal
@@ -82,13 +85,13 @@ def MenuListExercises():
                     designSevenList()
                 case 8:
                     os.system('cls')
-                    print("El ejercicio 8 aun no esta disponible")()
+                    designEigthList()
                 case 9: 
                     os.system('cls')
-                    print("El ejercicio 9 aun no esta disponible")()
+                    designNineList()
                 case 10:
                     os.system('cls')
-                    print("El ejercicio 10 aun no esta disponible")
+                    designTenList()
                 case 0: 
                     os.system('cls')
                     return #Volver al menu principal
@@ -142,13 +145,13 @@ def MenuDictExercises():
                     designSevenDict()
                 case 8:
                     os.system('cls')
-                    print("El ejercicio 8 aun no esta disponible")()
+                    designEigthDict()
                 case 9: 
                     os.system('cls')
-                    print("El ejercicio 9 aun no esta disponible")()
+                    designNineDict()
                 case 10:
                     os.system('cls')
-                    print("El ejercicio 10 aun no esta disponible")
+                    designTenDict()
                 case 0: 
                     os.system('cls')
                     return #Volver al menu principal
